@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let chart = null;
 
-    // Expanded trait database
     const traitDatabase = [
         {
             name: "Eye Color",
@@ -175,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
         );
         displayTraitList(filteredTraits);
         
-        // Clear previous trait info, chart, and gene expression
         traitInfo.innerHTML = 'Select a trait to view detailed information.';
         if (chart) {
             chart.destroy();
@@ -191,6 +189,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initial display of all traits
     displayTraitList(traitDatabase);
 });
