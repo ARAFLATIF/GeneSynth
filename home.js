@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animated feature cards
     const featureCards = document.querySelectorAll('.feature-card');
     const observerOptions = {
         threshold: 0.1
