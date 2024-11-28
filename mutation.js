@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const mutationImpact = document.getElementById('mutationImpact');
 
     generateRandomDNA.addEventListener('click', function() {
-        const length = Math.floor(Math.random() * 50) + 20; // Random length between 20 and 69
+        const length = Math.floor(Math.random() * 50) + 20; 
         const bases = 'ATCG';
         originalDNA.value = Array.from({length}, () => bases[Math.floor(Math.random() * 4)]).join('');
     });
 
     mutationType.addEventListener('change', updateMutationDetails);
-    updateMutationDetails(); // Initialize mutation details
+    updateMutationDetails(); 
 
     function updateMutationDetails() {
         let detailsHTML = '';
